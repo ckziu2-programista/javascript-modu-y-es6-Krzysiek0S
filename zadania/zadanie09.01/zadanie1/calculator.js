@@ -11,7 +11,10 @@ function multiply(a, b) {
 }
  
 function divide(a, b) {
-    return a / b
+    if (b === 0) {
+        return "Nie można dzielić przez zero!"
+      }
+      return a / b
 }
  
 module.exports = {
